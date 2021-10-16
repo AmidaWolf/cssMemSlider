@@ -61,8 +61,8 @@ header, main, footer {
 }
 
 .slider .slider__item {
-    width: 100%;
-    height: 100vh;
+    min-width: 100%;
+    height: 60vw;
     opacity: 1.0;
     transition: opacity 0.0s linear 0.2s;
     -moz-transition: opacity 0.0s linear 0.2s;
@@ -93,7 +93,6 @@ header, main, footer {
     height: 100%;
 
     border-radius: 10px;
-    object-fit: cover;
 }
 
 .slider img:hover .slider img {
@@ -262,3 +261,18 @@ header, main, footer {
     border-color: #dfdfdf;
 }
 
+/*768-1023*/
+@media (max-width: 1023.98px) {
+    .slider .slider__item {
+        min-width: 100%;
+        height: 100vw;
+    }
+
+    .wrapper {
+        flex-direction: column-reverse;
+    }
+
+    .descriptions {
+        align-self: start;
+    }
+}
